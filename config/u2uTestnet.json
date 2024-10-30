@@ -1,0 +1,13 @@
+{
+    "network": "testnet",
+    "peggedusdt": {
+      "address": "0x8fef26d79da3ac2ae5dac2acfb5a802fb043e6f0",
+      "startBlock": "40793525"
+    },
+    "pool1": {
+      "address": "0x5cc5a76b4d225122822482cd62d640ebbd0e8504"
+    },
+    "pool2": {
+      "address": "0x6fff0f3dd5dd914e6b3af42a25bb76f3c08ffee2"
+    }
+}

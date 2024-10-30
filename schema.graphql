@@ -1,0 +1,9 @@
+type Transaction @entity {
+  id: ID!
+  txHash: String!
+  from: String!  ##pool
+  to: String!
+  amount: BigInt!
+  timestamp: BigInt!
+  contract: String!
+}
