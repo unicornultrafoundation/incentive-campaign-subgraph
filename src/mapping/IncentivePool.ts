@@ -1,4 +1,4 @@
-import { Stake,UnStake,Harvest } from '../../generated/IncentivePool/IncentivePool';
+import { Stake,UnStake,Harvest } from '../../generated/IncentivePoolPublic/IncentivePool';
 import { Address, BigInt, log } from "@graphprotocol/graph-ts"
 import {TransactionPool} from '../../generated/schema';
 import {generateCombineKey, updateStatisticsDashboard, updateStatisticsUser } from "../utils";
