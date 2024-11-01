@@ -104,6 +104,9 @@ type Dashboard @entity {
 
 }
 
+type RecordJoin @entity {
+  id: ID!
+}
 
 enum Event {
   HARVEST ## Claimed

@@ -1,12 +1,12 @@
 import { Address, BigInt } from "@graphprotocol/graph-ts/index"
-import { Dashboard, User } from "../generated/schema";
-import { DashBoardStatistics, UserStatistics } from "./enum";
+import { Dashboard, RecordJoin, User,  } from "../generated/schema";
+import { ContractAddress, DashBoardStatistics, UserStatistics } from "./enum";
 
 export function generateCombineKey(keys: string[]): string {
   return keys.join('-');
 }
 
-export function fetchOrCreateUser(address: Address): User {
+export function fetchOrCreateUser(address: Address, AddressPool: Address): User {
   let userId = address.toHex();
   let user = User.load(userId);
   if (!user) {
@@ -47,6 +47,18 @@ export function fetchOrCreateUser(address: Address): User {
 
       user.save();
       updateStatisticsDashboard(DashBoardStatistics.totalUser, BigInt.fromI32(1));
+  }
+  let idJoin = generateCombineKey([AddressPool.toHexString(),userId]);
+  let recordJoin = RecordJoin.load(idJoin);
+  if(!recordJoin){
+    recordJoin = new RecordJoin(idJoin);
+    recordJoin.save()
+    if(AddressPool.toHexString().toLowerCase() == ContractAddress.publicPoolAddress.toLowerCase()){
+      updateStatisticsDashboard(DashBoardStatistics.totalUserPublic, BigInt.fromI32(1));
+    }
+    if(AddressPool.toHexString().toLowerCase() == ContractAddress.bitgetPoolAddress.toLowerCase()){
+      updateStatisticsDashboard(DashBoardStatistics.totalUserBitget, BigInt.fromI32(1));
+    }
   }
   return user as User;
 }
@@ -95,8 +107,8 @@ export function fetchOrCreateDashBoard(): Dashboard{
   return db as Dashboard
 }
 
-export function updateStatisticsUser(Address: Address, type: UserStatistics, amount: BigInt): void {
-  let user = fetchOrCreateUser(Address);
+export function updateStatisticsUser(Address: Address, type: UserStatistics, amount: BigInt, AddressPool: Address): void {
+  let user = fetchOrCreateUser(Address, AddressPool);
 
   if (type == UserStatistics.amount) {
     user.amount = user.amount.plus(amount);
