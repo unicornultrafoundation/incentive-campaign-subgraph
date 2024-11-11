@@ -1,8 +1,16 @@
 {
   "network": "mainnet",
   "peggedusdt": {
-    "address": "0xCEe1525E6A5eBc6c918c12b42B0c57f58013012f",
+    "address": "0xcee1525e6a5ebc6c918c12b42b0c57f58013012f",
     "startBlock": "17791752"
+  },
+  "incentivepoolpublic": {
+    "address": "0x2b252395ced910356539324a030b56e8eba82c9a",
+    "startBlock": "20887251"
+  },
+  "incentivepoolbitget": {
+    "address": "0x2b252395ced910356539324a030b56e8eba82c9a",
+    "startBlock": "20887251" 
   },
   "pool1": {
     "address": "0x5e809a85aa182a9921edd10a4163745bb3e36284"
