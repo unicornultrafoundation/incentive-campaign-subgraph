@@ -22,3 +22,51 @@ dataSources:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
       file: ./src/mapping/PeggedUSDT.ts
+  - kind: ethereum
+    name: IncentivePoolPublic
+    network: {{network}}
+    source:
+      address: "{{incentivepoolpublic.address}}"
+      abi: IncentivePool
+      startBlock: {{incentivepoolpublic.startBlock}}
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Transaction
+      abis:
+        - name: IncentivePool
+          file: ./abis/IncentivePool.json
+      eventHandlers:
+        - event: Stake(indexed address,uint256)
+          handler: handleStake
+        - event: UnStake(indexed address,uint256)
+          handler: handleUnStake
+        - event: Harvest(indexed address,uint256)
+          handler: handleHarvest
+      file: ./src/mapping/IncentivePool.ts
+  - kind: ethereum
+    name: IncentivePoolBitget
+    network: {{network}}
+    source:
+      address: "{{incentivepoolbitget.address}}"
+      abi: IncentivePool
+      startBlock: {{incentivepoolbitget.startBlock}}
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Transaction
+      abis:
+        - name: IncentivePool
+          file: ./abis/IncentivePool.json
+      eventHandlers:
+        - event: Stake(indexed address,uint256)
+          handler: handleStake
+        - event: UnStake(indexed address,uint256)
+          handler: handleUnStake
+        - event: Harvest(indexed address,uint256)
+          handler: handleHarvest
+      file: ./src/mapping/IncentivePool.ts

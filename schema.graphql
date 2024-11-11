@@ -1,4 +1,4 @@
-type Transaction @entity {
+type TransactionpUSDT @entity {
   id: ID!
   txHash: String!
   from: String!  ##pool
@@ -6,4 +6,110 @@ type Transaction @entity {
   amount: BigInt!
   timestamp: BigInt!
   contract: String!
+}
+
+type User @entity {
+  id: ID!
+  address: String!
+
+  amount: BigInt!
+  amountPublic: BigInt!
+  amountBitget: BigInt!
+
+
+  amountStake: BigInt!
+  amountStakePublic: BigInt!
+  amountStakeBitget: BigInt!
+
+
+  amountUnStake: BigInt!
+  amountUnStakePublic: BigInt!
+  amountUnStakeBitget: BigInt!
+
+
+  amountHarvest: BigInt!
+  amountHarvestPublic: BigInt!
+  amountHarvestBitget: BigInt!
+
+
+  totalTransaction: BigInt!
+  totalTransactionPublic: BigInt!
+  totalTransactionBitget: BigInt!
+
+
+  totalStake: BigInt!
+  totalStakePublic: BigInt!
+  totalStakeBitget: BigInt!
+
+
+  totalUnStake: BigInt!
+  totalUnStakePublic: BigInt!
+  totalUnStakeBitget: BigInt!
+
+
+  totalHarvest: BigInt!
+  totalHarvestPublic: BigInt!
+  totalHarvestBitget: BigInt!
+
+}
+
+type TransactionPool @entity {
+  id: ID!
+  contract: String!
+  from: String!
+  to: String!
+  txHash: String!
+  event: Event!
+  amount: BigInt
+  timestamp: BigInt!
+}
+
+type Dashboard @entity {
+  id: ID!
+  totalUser: BigInt!
+  totalUserPublic: BigInt!
+  totalUserBitget: BigInt!
+
+  totalTransaction: BigInt!
+  totalTxBitget: BigInt!
+  totalTxPublic: BigInt!
+
+  amount: BigInt!
+  amountBitget: BigInt!
+  amountPublic: BigInt!
+  
+  totalStake: BigInt!
+  totalStakePublic: BigInt!
+  totalStakeBitget: BigInt!
+
+  totalUnStake: BigInt!
+  totalUnStakePublic: BigInt!
+  totalUnStakeBitget: BigInt!
+
+  totalHarvest: BigInt!
+  totalHarvestPublic: BigInt!
+  totalHarvestBitget: BigInt!
+
+  amountStake:BigInt!
+  amountStakePublic: BigInt!
+  amountStakeBitget: BigInt!
+
+  amountUnStake: BigInt!
+  amountUnStakePublic: BigInt!
+  amountUnStakeBitget: BigInt!
+
+  amountHarvest: BigInt!
+  amountHarvestPublic: BigInt!
+  amountHarvestBitget: BigInt!
+
+}
+
+type RecordJoin @entity {
+  id: ID!
+}
+
+enum Event {
+  HARVEST ## Claimed
+  STAKE
+  UNSTAKE
 }

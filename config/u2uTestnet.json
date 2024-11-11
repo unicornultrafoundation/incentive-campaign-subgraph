@@ -4,6 +4,14 @@
       "address": "0x8fef26d79da3ac2ae5dac2acfb5a802fb043e6f0",
       "startBlock": "40793525"
     },
+    "incentivepoolpublic": {
+      "address": "0x9aEfB3a61787d30f33B4049382647e1D85Eb50EB",
+      "startBlock": "41530388"
+    },
+    "incentivepoolbitget": {
+      "address": "0x0E19f79A9D2A72d7B452cDc2F8250a349D065a11",
+      "startBlock": "41530391" 
+    },
     "pool1": {
       "address": "0x5cc5a76b4d225122822482cd62d640ebbd0e8504"
     },
