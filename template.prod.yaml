@@ -47,7 +47,7 @@ dataSources:
           handler: handleHarvest
       file: ./src/mapping/IncentivePool.ts
   - kind: ethereum
-    name: IncentivePoolPublic
+    name: IncentivePoolBitget
     network: {{network}}
     source:
       address: "{{incentivepoolbitget.address}}"
