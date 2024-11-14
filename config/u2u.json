@@ -9,8 +9,8 @@
     "startBlock": "20914212"
   },
   "incentivepoolbitget": {
-    "address": "0x2b252395ced910356539324a030b56e8eba82c9a",
-    "startBlock": "20887251" 
+    "address": "0x2183a87eb7967ef5cb2f50c40f033aedce2f07fd",
+    "startBlock": "21032023" 
   },
   "pool1": {
     "address": "0x5e809a85aa182a9921edd10a4163745bb3e36284"
