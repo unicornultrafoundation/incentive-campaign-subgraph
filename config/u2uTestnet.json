@@ -8,6 +8,10 @@
       "address": "0x9aEfB3a61787d30f33B4049382647e1D85Eb50EB",
       "startBlock": "41530388"
     },
+    "incentivepoolpublic2": {
+      "address": "0x965aD51893144E91086c0c3EcbEB7066dA451320",
+      "startBlock": "44011304"
+    },
     "incentivepoolbitget": {
       "address": "0x0E19f79A9D2A72d7B452cDc2F8250a349D065a11",
       "startBlock": "41530391" 
