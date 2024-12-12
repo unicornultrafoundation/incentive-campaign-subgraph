@@ -112,4 +112,5 @@ enum Event {
   HARVEST ## Claimed
   STAKE
   UNSTAKE
+  UNSTAKELEGACY
 }
