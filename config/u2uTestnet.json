@@ -5,12 +5,12 @@
       "startBlock": "40793525"
     },
     "incentivepoolpublic": {
-      "address": "0x9aEfB3a61787d30f33B4049382647e1D85Eb50EB",
-      "startBlock": "41530388"
+      "address": "0x59004E1DA5541349EDd75e229c105a846e2d5396",
+      "startBlock": "44073664"
     },
     "incentivepoolpublic2": {
-      "address": "0xa4B1A335351468Dcb057B08A58D6Ea1476050514",
-      "startBlock": "44068558"
+      "address": "0x16a1698C98a30F00be04545F276Fc2d57Cb8b3E4",
+      "startBlock": "44073665"
     },
     "incentivepoolbitget": {
       "address": "0x0E19f79A9D2A72d7B452cDc2F8250a349D065a11",
