@@ -1,8 +1,8 @@
 {
     "network": "testnet",
     "peggedusdt": {
-      "address": "0x8fef26d79da3ac2ae5dac2acfb5a802fb043e6f0",
-      "startBlock": "40793525"
+      "address": "0xBBF92F72a4627CEc4517aAcD817144014a8f64D8",
+      "startBlock": "44011303"
     },
     "incentivepoolpublic": {
       "address": "0x59004E1DA5541349EDd75e229c105a846e2d5396",
