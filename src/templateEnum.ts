@@ -1,6 +1,6 @@
 export namespace ContractAddress {
     export const ZERO = "0x0000000000000000000000000000000000000000"
-    export const listPool = ["{{pool1.address}}","{{pool2.address}}"]
+    export const listPool = ["{{pool1.address}}"]
     export const publicPoolAddress = ["{{incentivepoolpublic.address}}","{{incentivepoolpublic2.address}}"]
     export const bitgetPoolAddress = ["{{incentivepoolbitget.address}}"]
 
