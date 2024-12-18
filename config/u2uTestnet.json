@@ -1,21 +1,22 @@
 {
     "network": "testnet",
     "peggedusdt": {
-      "address": "0x8fef26d79da3ac2ae5dac2acfb5a802fb043e6f0",
-      "startBlock": "40793525"
+      "address": "0xBBF92F72a4627CEc4517aAcD817144014a8f64D8",
+      "startBlock": "44011303"
     },
     "incentivepoolpublic": {
-      "address": "0x9aEfB3a61787d30f33B4049382647e1D85Eb50EB",
-      "startBlock": "41530388"
+      "address": "0x59004E1DA5541349EDd75e229c105a846e2d5396",
+      "startBlock": "44073428"
+    },
+    "incentivepoolpublic2": {
+      "address": "0x16a1698C98a30F00be04545F276Fc2d57Cb8b3E4",
+      "startBlock": "44073665"
     },
     "incentivepoolbitget": {
       "address": "0x0E19f79A9D2A72d7B452cDc2F8250a349D065a11",
       "startBlock": "41530391" 
     },
     "pool1": {
-      "address": "0x5cc5a76b4d225122822482cd62d640ebbd0e8504"
-    },
-    "pool2": {
-      "address": "0x6fff0f3dd5dd914e6b3af42a25bb76f3c08ffee2"
+      "address": "0x556180984ec8b4d28476376f99a071042f262a5c"
     }
 }

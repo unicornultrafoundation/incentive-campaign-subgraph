@@ -53,10 +53,10 @@ export function fetchOrCreateUser(address: Address, AddressPool: Address): User 
   if(!recordJoin){
     recordJoin = new RecordJoin(idJoin);
     recordJoin.save()
-    if(AddressPool.toHexString().toLowerCase() == ContractAddress.publicPoolAddress.toLowerCase()){
+    if (isAddressInArray( AddressPool.toHexString().toLowerCase(), ContractAddress.publicPoolAddress)) {
       updateStatisticsDashboard(DashBoardStatistics.totalUserPublic, BigInt.fromI32(1));
     }
-    if(AddressPool.toHexString().toLowerCase() == ContractAddress.bitgetPoolAddress.toLowerCase()){
+    if (isAddressInArray( AddressPool.toHexString().toLowerCase(), ContractAddress.bitgetPoolAddress)) {
       updateStatisticsDashboard(DashBoardStatistics.totalUserBitget, BigInt.fromI32(1));
     }
   }
@@ -275,4 +275,12 @@ export function updateStatisticsDashboard(type: DashBoardStatistics, amount: Big
 }
 
 
-
+export function isAddressInArray(address: string, addressArray: Array<string>): boolean {
+  const normalizedAddress = address.toLowerCase();
+  for (let i = 0; i < addressArray.length; i++) {
+    if (addressArray[i].toLowerCase() == normalizedAddress) {
+      return true;
+    }
+  }
+  return false;
+}

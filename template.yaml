@@ -47,6 +47,32 @@ dataSources:
           handler: handleHarvest
       file: ./src/mapping/IncentivePool.ts
   - kind: ethereum
+    name: IncentivePoolPublic2
+    network: {{network}}
+    source:
+      address: "{{incentivepoolpublic2.address}}"
+      abi: IncentivePool2
+      startBlock: {{incentivepoolpublic2.startBlock}}
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Transaction
+      abis:
+        - name: IncentivePool2
+          file: ./abis/IncentivePool2.json
+      eventHandlers:
+        - event: Stake(indexed address,uint256)
+          handler: handleStake
+        - event: UnStake(indexed address,uint256)
+          handler: handleUnStake
+        - event: Harvest(indexed address,uint256)
+          handler: handleHarvest
+        - event: LegacyUnStake(indexed address,uint256)
+          handler: handlerLegacyUnStake
+      file: ./src/mapping/IncentivePool.ts
+  - kind: ethereum
     name: IncentivePoolBitget
     network: {{network}}
     source:
