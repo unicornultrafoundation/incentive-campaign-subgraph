@@ -8,9 +8,17 @@
     "address": "0x07cf4b1f02f49ca6dee8ef12153da0d619c9e1ef",
     "startBlock": "20914212"
   },
+  "incentivepoolpublic2": {
+    "address": "0xd0ffcf66E5c85FD780E3B33e4C8D544e3D4501AC",
+    "startBlock": "22781294"
+  },
   "incentivepoolbitget": {
     "address": "0x2183a87eb7967ef5cb2f50c40f033aedce2f07fd",
     "startBlock": "21032023" 
+  },
+  "incentivepoolbitget2": {
+    "address": "0x312fbC9734703769C2fB88aD758C4A3A66c3cA24",
+    "startBlock": "22781396" 
   },
   "pool1": {
     "address": "0x5e809a85aa182a9921edd10a4163745bb3e36284"
