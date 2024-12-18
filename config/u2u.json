@@ -9,16 +9,16 @@
     "startBlock": "20914212"
   },
   "incentivepoolpublic2": {
-    "address": "0xd0ffcf66E5c85FD780E3B33e4C8D544e3D4501AC",
-    "startBlock": "22781294"
+    "address": "0xce7E53544b7A00247D63aB003911f45Ce069D17c",
+    "startBlock": "22783389"
   },
   "incentivepoolbitget": {
     "address": "0x2183a87eb7967ef5cb2f50c40f033aedce2f07fd",
     "startBlock": "21032023" 
   },
   "incentivepoolbitget2": {
-    "address": "0x312fbC9734703769C2fB88aD758C4A3A66c3cA24",
-    "startBlock": "22781396" 
+    "address": "0xcE5fCce36136B17Aa4133d16B1aC2E5639b6C39f",
+    "startBlock": "22783442" 
   },
   "pool1": {
     "address": "0x5e809a85aa182a9921edd10a4163745bb3e36284"
